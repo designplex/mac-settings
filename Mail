@@ -1,0 +1,11 @@
+// システム環境設定...のインターネットアカウントの設定
+/Users/[UserName]/Library/Accounts/
+
+// Mailデータと設定ファイル
+
+/Users/[UserName]/Library/Mail/
+/Users/[UserName]/Library/Preferences/com.apple.accounts.plist
+/Users/[UserName]/Library/Preferences/com.apple.accountsd.plist
+/Users/[UserName]/Library/Preferences/com.apple.mail-shared.plist
+/Users/[UserName]/Library/SyncedPreferences/com.apple.mail-com.apple.mail.vipsenders.plist
+/Users/[UserName]/Library/SyncedPreferences/com.apple.mail.plist

@@ -1,0 +1,10 @@
+// Git管理から除外するファイル
+~/.config/git/ignore
+
+// Gitクライアントでログインかターミナルでユーザーを設定
+$ git config --global user.name "My Name"
+$ git config --global user.email myname@example.com
+
+// ~/.gitconfigに登録されている情報を確認
+$ git config --global user.name
+$ git config --global user.email

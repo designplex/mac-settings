@@ -1,5 +1,33 @@
-// Git管理から除外するファイル
-~/.config/git/ignore
+// Git管理から除外するファイル ~/.config/git/ignore
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+Iconr
+Icon?
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 // Gitクライアントでログインかターミナルでユーザーを設定
 $ git config --global user.name "My Name"

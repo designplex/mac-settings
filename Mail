@@ -9,3 +9,13 @@
 /Users/[UserName]/Library/Preferences/com.apple.mail-shared.plist
 /Users/[UserName]/Library/SyncedPreferences/com.apple.mail-com.apple.mail.vipsenders.plist
 /Users/[UserName]/Library/SyncedPreferences/com.apple.mail.plist
+
+# トラブル
+// 過去の送信メールのタイトル文字化け High Sierraでは問題なし
+Finderメニューのメールボックス「再構築」
+
+// 未読の数字が消えない場合
+~/Library/Mail/V8/MailData/の以下のファイルを削除
+Envelope Index
+Envelope Index-shm
+Envelope Index-wal

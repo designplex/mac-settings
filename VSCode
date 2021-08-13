@@ -17,3 +17,6 @@ JetBrainsMono-Regular
 
 // Editor:Render Whitespace
 all
+
+// Editor:Word Wrap
+On

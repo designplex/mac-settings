@@ -1,4 +1,10 @@
-// Git管理から除外するファイル ~/.config/git/ignore
+# 導入
+Xcodeをインストール
+gitコマンドを打つと「"git"コマンドを実行するには、コマンドライン・デベロッパツールが必要です。ツールを今すぐインストールしますか？」と表示される
+
+# 設定
+// Git管理から除外するファイルの場所　~/.config/git/ignore
+↓ 中身
 
 # General
 .DS_Store
@@ -28,6 +34,8 @@ Icon?
 Network Trash Folder
 Temporary Items
 .apdisk
+
+↑ 中身ここまで
 
 // Gitクライアントでログインかターミナルでユーザーを設定
 $ git config --global user.name "My Name"

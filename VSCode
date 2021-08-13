@@ -10,5 +10,10 @@ https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-
 「表示」外観のサイドバーを右に移動
 
 // Editor:Font Size
+13
 
+// Editor:Font Family
+JetBrainsMono-Regular
 
+// Editor:Render Whitespace
+all

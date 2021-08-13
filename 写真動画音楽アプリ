@@ -1,10 +1,35 @@
-// 写真.app
+# 写真.app
 データの場所
 /Users/[username]/Pictures/Photos Library.photoslibrary
 
-// ミュージック.app
+# ミュージック.app
 データの場所
 /Users/[username]/Music/Music
 ミュージック.appを「optionキー＋クリック」で立ち上げ、ライブラリ（Music Library.musiclibrary）を選択する必要あり
 
-// TV.app
+// Finderメニュー
+表示「ステータスバーを表示」に
+
+// 環境設定
+一般「通知」をオフ
+再生「音量を自動調整」をオン
+再生「ロスレスオーディオ」をオン
+
+# TV.app
+データの場所
+/Users/[username]/Movies/TV
+
+# ブック.app
+サインインと認証が必要
+ストア -> 認証 -> このコンピュータを認証...
+
+# iTunesで管理していたファイル
+iTunes Media内
+Home Videos → TV.app
+Mobile Applications → 移行先なし
+Movies → TV.app
+Music → ミュージック.app
+TV Shows → TV.app
+Audiobooks → ブック.app
+Ringtones → 移行先なし。iPhoneの同期の際に着信音ファイル（.m4r）をドロップ
+

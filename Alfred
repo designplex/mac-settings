@@ -2,11 +2,22 @@
 Alfred hotkey: 「⌘ + space」に変更
 Where are you: Japan
 
+// Features - Default Results
+拡張子「.alfredsnippets」のファイルをクリックしてインポート。
+Alfredで表示させていので、Extra:の項目を全てチェック。
+
 // Features - Snippets
+「Automatically expand snippets by keyword」をオンにすると表示される「A→」のチェックボックスをチェック。
+Snippetsを全部選択して右クリック -> Auto Expansion Set Allowedに。
+
 拡張子「.alfredsnippets」のファイルをクリックしてインポート
+Mac Symbols、Emoji Packは以下からダウンロード
+https://www.alfredapp.com/extras/snippets/
 
 // Workflows
-拡張子「.alfredworkflow」のファイルをクリックしてインポート
+拡張子「.alfredworkflow」のファイルをクリックしてインポート。
+Window manager関連のWorkflow
+https://www.packal.org
 
 // Appearance
 拡張子「.alfredappearance」のファイルをクリックしてインポート
@@ -14,6 +25,7 @@ Options - Hide hat on Alfred window
 // Remote
 
 // Advanced
+Alfredを開いた際に入力モードを半角英数にする為Force Keyboard を「ABC」に設定
 
 // Powerpack Mega supporter
 メアドとライセンスキーで有効化

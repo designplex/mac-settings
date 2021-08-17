@@ -26,3 +26,11 @@ On
 
 // editor.minimap.enabled
 チェックを外す
+
+// files.exclude
+エクスプローラーで表示されるファイルを非表示に。
+画面では反映されなかったので、setting.jsonに以下を追加
+    "files.exclude": {
+        "**/.gitignore": true,
+        "**/Icon[\r]": true
+    }

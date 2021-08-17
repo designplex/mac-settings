@@ -23,3 +23,6 @@ On
 
 // workbench.editor.enablePreview
 新しいタブでファイルを開く為に、チェックを外す
+
+// editor.minimap.enabled
+チェックを外す

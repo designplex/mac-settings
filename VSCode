@@ -29,8 +29,16 @@ On
 
 // files.exclude
 エクスプローラーで表示されるファイルを非表示に。
-画面では反映されなかったので、setting.jsonに以下を追加
+画面では反映されなかったので、settings.jsonに以下を追加
     "files.exclude": {
         "**/.gitignore": true,
         "**/Icon[\r]": true
     }
+
+// editor.tokenColorCustomizations
+    "editor.tokenColorCustomizations": {
+        "comments": "#229977" // コメントアウトの色
+    }
+
+// 設定ファイルの場所
+/Users/[username]/Library/Application Support/Code/User/settings.json

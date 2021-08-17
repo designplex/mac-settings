@@ -9,14 +9,17 @@ https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-
 // メニュー
 「表示」外観のサイドバーを右に移動
 
-// Editor:Font Size
+// editor.fontSize
 13
 
-// Editor:Font Family
+// editor.fontFamily
 JetBrainsMono-Regular
 
-// Editor:Render Whitespace
+// editor.renderWhitespace
 all
 
-// Editor:Word Wrap
+// editor.wordWrap
 On
+
+// workbench.editor.enablePreview
+新しいタブでファイルを開く為に、チェックを外す

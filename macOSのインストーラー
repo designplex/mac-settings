@@ -29,3 +29,4 @@ https://support.apple.com/ja-jp/HT201372
 コマンド例 El Capitan
 sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
 ※ MyVolumeが名前部分
+完了後のメディアの名前は「Install OS X El Capitan」

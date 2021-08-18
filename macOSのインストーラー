@@ -21,6 +21,7 @@ https://apps.apple.com/jp/app/macos-sierra/id1127487414?mt=12
 
 // ダウンロードしたmacOSをメディアに書き込む
 容量が14GB以上のSDカードやUSBメモリ、ハードディスクなどを用意。
+※ El Capitanの場合8GBでも可能
 
 ターミナル.appで実行するコマンドや詳細は以下の公式ページを参照
 macOS の起動可能なインストーラを作成する方法

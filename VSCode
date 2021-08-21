@@ -40,5 +40,8 @@ On
         "comments": "#229977" // コメントアウトの色
     }
 
+// markdown.styles
+マークダウンのプレビューにCSSを適応する
+
 // 設定ファイルの場所
 /Users/[username]/Library/Application Support/Code/User/settings.json

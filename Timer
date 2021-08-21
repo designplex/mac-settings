@@ -1,0 +1,5 @@
+// a simple timer app
+https://github.com/michaelvillar/timer-app
+
+// Terminal
+sleep 5; say "時間です";  afplay /Users/[username]/Documents/data/Ringtones/Amadana_bell.m4r

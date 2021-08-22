@@ -1,3 +1,5 @@
+# アプリの設定
+
 // メニューの日本語化
 Japanese Language Pack for Visual Studio Code
 https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja
@@ -45,3 +47,17 @@ On
 
 // 設定ファイルの場所
 /Users/[username]/Library/Application Support/Code/User/settings.json
+
+# プラグインなど追加機能拡張
+
+// GitHub Theme GitHubのテーマ
+https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
+
+// Nord テーマ
+https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code
+
+// EvilInspector 全角スペースに色を付け
+https://marketplace.visualstudio.com/items?itemName=saikou9901.evilinspector
+
+// indent-rainbow インデントを色付け
+https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow

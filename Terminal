@@ -1,7 +1,55 @@
 # ターミナル.appの表示を見やすくカスタマイズ
+# zshの設定
 
 // カスタマイズのコマンドを書き込むファイルを作成
-
 touch ~/.zshrc
 
-// 
+// .zshrcの内容
+
+# tab押した時の補完の候補に色付け
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' menu select
+
+# 入力をミスった場合
+# yは、「はい」。つまり clear が実行
+# nは、「いいえ」です。つまり cleat が実行
+# aは、実行せずに中止
+# eは、コマンドを変更
+setopt correct
+
+# 直前に入力したコマンドと同じ場合、履歴に残さない
+setopt HIST_IGNORE_DUPS
+
+# -----------------------------
+# Prompt
+# -----------------------------
+# %M    ホスト名
+# %m    ホスト名
+# %d    カレントディレクトリ(フルパス)
+# %~    カレントディレクトリ(フルパス2)
+# %C    カレントディレクトリ(相対パス)
+# %c    カレントディレクトリ(相対パス)
+# %n    ユーザ名
+# %#    ユーザ種別
+# %?    直前のコマンドの戻り値
+# %D    日付(yy-mm-dd)
+# %W    日付(yy/mm/dd)
+# %w    日付(day dd)
+# %*    時間(hh:flag_mm:ss)
+# %T    時間(hh:mm)
+# %t    時間(hh:mm(am/pm))
+
+PROMPT='%F{yellow}[%~]%f
+%F{white}%D{%m/%d} %*%f
+%# '
+
+// ログイン時のメッセージを削除
+Last login: Sun Aug 22 01:43:23 on ttys000を削除
+.hushloginというファイルを作成するだけ
+
+touch ~/.hushlogin
+
+解除（削除）は以下のコマンドでファイルを削除
+rm ~/.hushlogin

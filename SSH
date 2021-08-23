@@ -1,0 +1,8 @@
+// パスワード認証によるSSH接続
+ターミナル.appで以下のコマンドを実行
+
+$ ssh -p 22 root@aaa.bbb.ccc.ddd
+
+yesと入力すると「Warning: Permanently added....省略」と表示されキャッシュ
+
+/Users/<username>/.ssh/　にファイルが生成される

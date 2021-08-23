@@ -1,8 +1,21 @@
-// パスワード認証によるSSH接続
-ターミナル.appで以下のコマンドを実行
+契約サーバは公開鍵認証方式でのSSH接続のみ対応。
+
+// cPanelでの作業
+「SSHアクセス」→「SSHキー管理」の秘密キーをダウンロード。
+「id_rsa」という名称のファイルがダウンロードされる。
+※ PPK形式に変換は不要
+
+// Macでの作業
+ディレクトリとファイルを作成
+
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
+$ touch ~/.ssh/authorized_keys
+$ chmod 600 ~/.ssh/authorized_keys
+
+ダウンロードした「id_rsa」は ~/.ssh/id_rsaに。パーミッションは600。
 
 $ ssh -p 22 root@aaa.bbb.ccc.ddd
 
-yesと入力すると「Warning: Permanently added....省略」と表示されキャッシュ
-
-/Users/<username>/.ssh/　にファイルが生成される
+// SSH ログイン
+ssh-add -K ~/.ssh/id_rsa

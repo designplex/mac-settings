@@ -45,6 +45,11 @@ On
 // markdown.styles
 マークダウンのプレビューにCSSを適応する
 
+// workbench.editor.wrapTabs
+オンにする
+ファイル名のタブを折り返し複数行に
+
+
 // 設定ファイルの場所
 /Users/[username]/Library/Application Support/Code/User/settings.json
 

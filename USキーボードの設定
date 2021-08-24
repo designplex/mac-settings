@@ -1,16 +1,21 @@
 # キーリマップアプリ
 hammerspoon
 https://github.com/Hammerspoon/hammerspoon
+https://www.hammerspoon.org
 
 karabiner-elements
 https://karabiner-elements.pqrs.org
 
-英かな
+英かな（2017年から更新はなさそう）
 https://ei-kana.appspot.com
 
 # macOS BigSurではhammerspoonで設定
-/Users/ken-g/.hammerspoon/init.lua に以下のソースを書き込み。
-hs.keycodes.setLayout('ABC')の部分を書き換え
+~/.hammerspoon/init.lua に以下のソースを書き込み。
+
+※ 英語キーボードかつ入力モードを英字にしていない場合の入力モードは「ABC」。
+hs.keycodes.setMethod('Romaji')の部分を以下に変更
+hs.keycodes.setLayout('ABC')
+
 ソース元のウェブサイト
 https://mac-ra.com/hammerspoon-command-eikana02/
 
@@ -27,7 +32,10 @@ local function eikanaEvent(event)
         if not f['cmd'] then
             if simpleCmd == false then
                 if c == map['cmd'] then
-                    hs.keycodes.setLayout('ABC')
+                    // ABCだとSafariでテキストエリア入力時に切り替えできない現象が頻繁に発生
+                    // hs.keycodes.setLayout('ABC')
+                    // 入力モード「英字」では発生しない
+                    hs.keycodes.setMethod('Romaji')
                 elseif c == map['rightcmd'] then
                     hs.keycodes.setMethod('Hiragana')
                 end

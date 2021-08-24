@@ -2,7 +2,7 @@
 // 仮想マシンのフォルダを変更
 /Users/ken-g/Documents/VMs
 
-// Windows 10 Insider Programの日本語化（一部）
+// Windows 10 ARM Insider Programの日本語化（一部）
 Settings -> Time & Language -> 左の「Language」を選択。
 Languageの「Preferred languages」で日本語をインストール。
 

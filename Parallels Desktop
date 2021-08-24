@@ -1,3 +1,9 @@
 # 環境設定
 // 仮想マシンのフォルダを変更
 /Users/ken-g/Documents/VMs
+
+// Windows 10 Insider Programの日本語化
+Settings -> Time & Language -> 左の「Language」を選択。
+Languageの「Preferred languages」で日本語をインストール。
+
+インストール画面の「Set as my Windows display language」をチェック

@@ -1,15 +1,15 @@
 # キーリマップアプリ
-hammerspoon
+// hammerspoon
 https://www.hammerspoon.org
 ※ CPU0.1%, メモリ20MBほど
 
-karabiner-elements
+// karabiner-elements
 https://karabiner-elements.pqrs.org
 
-英かな（2017年から更新はなさそう）
+// 英かな（2017年から更新はなさそう）
 https://ei-kana.appspot.com
 
-# macOS BigSurではhammerspoonで設定
+# hammerspoonで設定
 ~/.hammerspoon/init.lua に以下のソースを書き込み。
 
 ※ 英語キーボードかつ入力モードを英字にしていない場合の入力モードは「ABC」。
@@ -47,3 +47,13 @@ end
 
 eikana = hs.eventtap.new({hs.eventtap.event.types.keyDown, hs.eventtap.event.types.flagsChanged}, eikanaEvent)
 eikana:start()
+
+# Karabiner-Elementsで設定
+インストール時にmacOSのシステム環境設定のプライバシーの「入力監視」を許可する必要あり。
+Karabiner-Elementsアプリの「Complex Modifications」で左コマンドが「英数」、右コマンドが「かな」を設定。
+
+Add Rule -> Import more rules from the internet (open a web browser)をクリックしてWebブラウザ経由で設定ファイルをインポート。
+International (Language Specific) -> For Japanese（日本語環境向けの設定）を選択してインポート。
+「コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな）」を有効に。
+
+※ ヘルパーアプリが8つほど起動している

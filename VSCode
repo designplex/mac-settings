@@ -49,6 +49,10 @@ On
 オンにする
 ファイル名のタブを折り返し複数行に
 
+// workbench.startupEditor
+起動時にようこそページを開かないようにする
+「newuntitledFile」に
+
 
 // 設定ファイルの場所
 /Users/[username]/Library/Application Support/Code/User/settings.json

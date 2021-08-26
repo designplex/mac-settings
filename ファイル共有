@@ -1,1 +1,15 @@
 システム環境設定 -> 共有 -> ファイル共有
+
+// パケット署名を無効にして速度改善
+※ macOS 10.13.4 以降では、パケット署名はデフォルトで無効になっています。
+
+Appleのサイト
+https://support.apple.com/ja-jp/HT205926
+
+sudo -s
+echo "[default]" >> /etc/nsmb.conf
+echo "signing_required=no" >> /etc/nsmb.conf
+exit
+
+もしくは /etc/nsmb.conf ではなく以下に設置
+~/Library/Preferences/nsmb.conf

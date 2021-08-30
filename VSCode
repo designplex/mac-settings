@@ -45,6 +45,9 @@ On
 // markdown.styles
 マークダウンのプレビューにCSSを適応する
 
+// markdown.preview.breaks
+マークダウンのプレビューの改行を追加
+
 // workbench.editor.wrapTabs
 オンにする
 ファイル名のタブを折り返し複数行に

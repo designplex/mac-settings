@@ -1,0 +1,37 @@
+# WordPressをローカルで動かすための環境設定
+
+// Local（Local by Flywheel）をダウンロード
+https://localwp.com
+
+// Localをインストール
+画面の指示に従いサーバーのPHPやApacheの選択、WordPressのID/PWの設定などを行う。
+
+
+# WordPress管理画面の設定
+
+// 管理画面URL
+http://understrap.local/wp-admin/
+
+// ダミーデータをダウンロード
+ダミーテータのファイル
+https://github.com/jawordpressorg/theme-test-data-ja
+xmlファイルをローカルにダウンロードし以下のプラグインでインポート。
+
+// ダミーデータをインポート
+WordPress管理画面 -> ツール -> インポート -> WordPressのプラグインをインストールし、ダミーデータのxmlファイルを選択してインポート。
+
+// 表記を日本語にする
+設定 -> 一般の項目を変更する。
+「サイトの言語」を日本語、「タイムゾーン」を東京、「日付形式」をカスタムのY/n/j、「時刻形式」をg:i Aに変更。
+
+// WordPress アドレス (URL)を変更
+http://understrap.local/blog
+
+// ルートのindex.php
+以下のパス部分に/blogを追加
+require __DIR__ . '/blog/wp-blog-header.php';
+
+// blogディレクトリにファイルを移動
+index.php以外をblogディレクトリに移動
+
+http://understrap.local/やhttp://understrap.local/blog/wp-admin/にアクセスできれば成功。

@@ -34,4 +34,20 @@ require __DIR__ . '/blog/wp-blog-header.php';
 // blogディレクトリにファイルを移動
 index.php以外をblogディレクトリに移動
 
+// blogディレクトリにもindex.phpをコピー
+index.phpが無いとエラーが出る。
+「Warning: fileperms(): stat failed for /Users/<username>/Documents/WordPress_local/app/public/blog/index.php in /Users/<username>/Documents/WordPress_local/app/public/blog/wp-admin/includes/file.php on line 1961」
+
+require __DIR__ . '/blog/wp-blog-header.php'; 部分の/blogを削除したindex.phpを/blog/に配置。
+
 http://understrap.local/やhttp://understrap.local/blog/wp-admin/にアクセスできれば成功。
+
+// Localの管理画面でのSSL化
+Localの管理画面のSSLのTRUSTをクリックしPWを入力。しばらくするとTRUSTEDになっていれば成功
+
+// WordPressの管理画面でURLを変更する
+WordPress アドレス (URL)とサイトアドレス (URL)の部分をhttps://に
+
+// キーチェーンの証明書を変更する
+証明書のエラーが出るので、キーチェーンアクセスで証明書を信頼するに変更する
+https://localwp.com/help-docs/ssl/managing-local-sites-ssl-certificate-in-macos/

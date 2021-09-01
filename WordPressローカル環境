@@ -74,3 +74,51 @@ ken-g.comは、日常の話題や好きなもの「デザイン、Apple製品、
 
 // 外観 -> カスタマイズ -> メニュー
 全ての位置を表示でヘッダーのメニューを有効に
+
+
+# gulpやbrowsersyncを動かす設定
+
+// Homebrewをインストール
+https://brew.sh/index_ja
+ターミナルで以下を実行
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+// Homebrewのパスを通す
+Next stepsのechoの部分を実行してパスを通す。
+以下を実行してバージョンが表示されれば完了。
+% brew --version
+
+// Homebrewでnodebrewをインストール
+% brew install nodebrew
+バージョンを確認。
+% nodebrew -v
+
+// Node.jsをインストール
+インストールできるバージョンを表示。
+%　nodebrew ls-remote
+
+最新版をインストール
+% nodebrew install-binary latest
+
+安定版をインストール
+% nodebrew install-binary stable
+
+※ エラー Warning: No such file or directory
+解決するためにディレクトリを作成する
+% mkdir -p ~/.nodebrew/src
+
+// インストールされたnode有効化
+% nodebrew lsを実行すると
+v16.8.0
+current: none
+となっているので以下で有効化する
+
+% nodebrew use v16.8.0
+
+// nodeが使えるように環境パスを通す
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
+
+ターミナル.appの再起動で以下のコマンドを実行して確認。
+node -v
+バージョンが表示されればインストール完了
+

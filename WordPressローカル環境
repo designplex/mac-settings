@@ -6,6 +6,9 @@ https://localwp.com
 // Localをインストール
 画面の指示に従いサーバーのPHPやApacheの選択、WordPressのID/PWの設定などを行う。
 
+// 参考：Localをアンインストール
+https://localwp.com/help-docs/troubleshooting/how-do-i-uninstall-local-by-flywheel-on-macos/
+/private/etc/hosts
 
 # WordPress管理画面の設定
 

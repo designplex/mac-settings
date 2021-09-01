@@ -91,11 +91,14 @@ Next stepsのechoの部分を実行してパスを通す。
 // Homebrewでnodebrewをインストール
 % brew install nodebrew
 バージョンを確認。
-% nodebrew -v
+% .nodebrew -v
 
 // Node.jsをインストール
 インストールできるバージョンを表示。
 %　nodebrew ls-remote
+
+※ M1 Mac対応版はv16.0.0
+nodebrew install-binary v16.0.0
 
 最新版をインストール
 % nodebrew install-binary latest
@@ -109,11 +112,11 @@ Next stepsのechoの部分を実行してパスを通す。
 
 // インストールされたnode有効化
 % nodebrew lsを実行すると
-v16.8.0
+v16.0.0
 current: none
 となっているので以下で有効化する
 
-% nodebrew use v16.8.0
+% nodebrew use v16.0.0
 
 // nodeが使えるように環境パスを通す
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
@@ -121,4 +124,9 @@ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
 ターミナル.appの再起動で以下のコマンドを実行して確認。
 node -v
 バージョンが表示されればインストール完了
+
+// gulpのインストール
+cdでunderstrapのフォルダーに移動しターミナルで以下を実行。
+
+npm install
 

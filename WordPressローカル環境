@@ -157,7 +157,8 @@ var sass = require('gulp-sass')(require('sass'));
 最後に以下を実行して完了
 $ npm install
 
-understrapのディレクトリで以下を実行してBrowser-Syncする
+understrapのディレクトリで以下を実行してBrowser-Syncする。
+中止するには「control + C」
 $ npx gulp watch-bs
 
 # Dart Sassのエラー
@@ -172,3 +173,17 @@ $ npm un sass
 //バージョン（1.32.12）を指定してインストール   
 $ npm i -D sass@1.32.12
 
+# browserSyncの設定
+
+// 管理画面
+localhost:3001
+
+// URL
+understrap/gulpconfig.json
+以下の部分を開発環境のURLに合わせる
+"proxy": "http://understrap.local",
+
+// localhostのSSL化
+SSL化は証明書の作成が必要なのでhttpで問題なし。
+httpをURLで使うときはスラッシュで始まる記述をする。
+<a href="//www.ken-g.com">テスト</a>

@@ -157,9 +157,15 @@ var sass = require('gulp-sass')(require('sass'));
 最後に以下を実行して完了
 $ npm install
 
-understrapのディレクトリで以下を実行してBrowser-Syncする。
+Sassを自動コンパイルするには以下を実行
+$ npx gulp
+
+加えてBrowser-Syncをする場合はwatch-bsをつける。
 中止するには「control + C」
 $ npx gulp watch-bs
+
+gulpfile.jsの以下の部分
+gulp.task( 'watch-bs', gulp.parallel( 'browser-sync', 'watch' ) );
 
 # Dart Sassのエラー
 「/」を使った記述は非推奨のようでBootstrapの$spacer / 4のような記述はエラーが出る。

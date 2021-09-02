@@ -86,12 +86,12 @@ https://brew.sh/index_ja
 // Homebrewのパスを通す
 Next stepsのechoの部分を実行してパスを通す。
 以下を実行してバージョンが表示されれば完了。
-% brew --version
+$ brew --version
 
 // Homebrewでnodebrewをインストール
-% brew install nodebrew
+$ brew install nodebrew
 バージョンを確認。
-% .nodebrew -v
+$ .nodebrew -v
 
 // Node.jsをインストール
 インストールできるバージョンを表示。
@@ -101,32 +101,74 @@ Next stepsのechoの部分を実行してパスを通す。
 nodebrew install-binary v16.0.0
 
 最新版をインストール
-% nodebrew install-binary latest
+$ nodebrew install-binary latest
 
 安定版をインストール
-% nodebrew install-binary stable
+$ nodebrew install-binary stable
 
 ※ エラー Warning: No such file or directory
 解決するためにディレクトリを作成する
-% mkdir -p ~/.nodebrew/src
+$ mkdir -p ~/.nodebrew/src
 
 // インストールされたnode有効化
-% nodebrew lsを実行すると
+$ nodebrew lsを実行すると
 v16.0.0
 current: none
 となっているので以下で有効化する
 
-% nodebrew use v16.0.0
+$ nodebrew use v16.0.0
 
 // nodeが使えるように環境パスを通す
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
+$ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
 
 ターミナル.appの再起動で以下のコマンドを実行して確認。
-node -v
+$ node -v
 バージョンが表示されればインストール完了
 
-// gulpのインストール
-cdでunderstrapのフォルダーに移動しターミナルで以下を実行。
+// gulpのインストール（ローカルのみにインストール）
+https://qiita.com/ARTCreativeFactory/items/0af8cb8c6deb4954e09d
 
-npm install
+cdでunderstrapのフォルダーに移動。
+understrapデフォルトのpackage.jsonを削除して新しくpackage.jsonを生成する。
+$ npm init -y
+
+gulpをインストール
+$ npm install --save-dev gulp
+
+gulpのバージョン確認
+$ npx gulp -v
+CLI version: 2.3.0
+Local version: 4.0.2
+
+sass, gulp-sassをインストールする
+$ npm install -D sass gulp-sass
+
+他の関連パッケージもインストールする(gulpfile.js内でrequire()に書かれているパッケージ)
+$ npm install --save-dev gulp-plumber gulp-babel gulp-postcss gulp-rename gulp-concat gulp-uglify gulp-sourcemaps browser-sync del gulp-clean-css autoprefixer
+
+最新版は8.0.0だがエラーを吐くため7をインストール
+$ npm install --save-dev gulp-imagemin@7
+
+gulpfile.js内の
+var sass = require( 'gulp-sass' );
+を以下のように変更
+var sass = require('gulp-sass')(require('sass'));
+
+最後に以下を実行して完了
+$ npm install
+
+understrapのディレクトリで以下を実行してBrowser-Syncする
+$ npx gulp watch-bs
+
+# Dart Sassのエラー
+「/」を使った記述は非推奨のようでBootstrapの$spacer / 4のような記述はエラーが出る。
+Sass deprecation warning: Using / for division is deprecated #34051
+https://github.com/twbs/bootstrap/issues/34051
+
+他のエラーが見えにくくなるので以下を実行（一時的な解決法）
+//sass のパッケージ（1.34.0）をアンインストール
+$ npm un sass 
+ 
+//バージョン（1.32.12）を指定してインストール   
+$ npm i -D sass@1.32.12
 

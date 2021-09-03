@@ -10,6 +10,9 @@ Alfredで表示させていので、Extra:の項目を全てチェック。
 「Automatically expand snippets by keyword」をオンにすると表示される「A→」のチェックボックスをチェック。
 Snippetsを全部選択して右クリック -> Auto Expansion Set Allowedに。
 
+// // Features - Music - Keywords
+Music Mini Player以外でも操作したので「Show these keywords in alfred default results」をチェック
+
 拡張子「.alfredsnippets」のファイルをクリックしてインポート
 Mac Symbols、Emoji Packは以下からダウンロード
 https://www.alfredapp.com/extras/snippets/

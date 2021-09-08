@@ -34,6 +34,5 @@ https://chrome.google.com/webstore/detail/page-load-time/fploionmjgeclbkemipmkog
 Lighthouse - Webページのパフォーマンスチェック
 https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk/
 
-Web Vitals - Webページのパフォーマンスチェック
-[https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma/
-](https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma/)
+Web Vitals - Webページのパフォーマンスチェック  
+https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma/

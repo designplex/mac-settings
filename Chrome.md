@@ -36,3 +36,6 @@ https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjp
 
 Web Vitals - Webページのパフォーマンスチェック  
 https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma/
+
+The Marvellous Suspender - タブを一時停止
+https://chrome.google.com/webstore/detail/the-marvellous-suspender/noogafoofpebimajpfpamcfhoaifemoa/

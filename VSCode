@@ -61,6 +61,11 @@ On
 1.60.0からの機能。Bracket Pair Colorizerの機能拡張を外す。
 色のカスタマイズはworkbench.colorCustomizations。
 
+// editor.wordSeparators
+ダブルクリックで単語が選択されるように半角の「?」の後に以下を追加。
+「ひらがな」部分の選択をさせないように追加可能。
+、。「」（）；：・？＜＞＋－＊／｛｝｜～＆％＄＃”！’　てにをはがのともへでや
+
 // 設定ファイルの場所
 /Users/[username]/Library/Application Support/Code/User/settings.json
 

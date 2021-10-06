@@ -5,6 +5,10 @@ Googleの設定 -> 起動時に前回のページを開く
 Euphoria 提供元: The Chrome team  
 https://chrome.google.com/webstore/detail/euphoria/gpdhmlkimigjliojgaaihhbgdcmedagn/
 
+// ウェブサイトのアプリ化
+縦3点リーダーの部分のメニューにある、その他のツール -> ショートカットを作成... から作成可能。
+「ウィンドウとして開く」にチェックして作成。
+
 // 拡張機能  
 uBlock Origin - 広告ブロック  
 https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm/

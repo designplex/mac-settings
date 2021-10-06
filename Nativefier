@@ -1,0 +1,24 @@
+ウェブサイトをデスクトップアプリ化するツール
+<a href="https://github.com/nativefier/nativefier">nativefier - GitHub</a>
+
+ウェブサイトを<a href="https://www.electronjs.org/">Electron</a>でラップして、実行形式(.appなど)に変換するコマンドツール。
+
+// インストール
+macOS 10.9+ / Windows / Linux
+Node.js >= 12.9 and npm >= 6.9
+
+install Nativefier globally with npm install -g nativefier
+
+// デスクトップアプリ化
+nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --icon=youtube.icns
+
+// オプション
+<a href="https://github.com/nativefier/nativefier/blob/master/API.md">nativefier API</a>
+
+// アイコン
+.ico - For Windows
+.icns - For macOS (Apple Icon Image format)
+.png - For Linux
+
+<a href="https://www.iconfinder.com/">iconfinder</a>
+<a href="https://github.com/nativefier/nativefier-icons">nativefier-icons</a>

@@ -15,6 +15,15 @@ nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --i
 // オプション
 <a href="https://github.com/nativefier/nativefier/blob/master/API.md">nativefier API</a>
 
+--name={アプリ名}
+--electron-version=15.1.1
+--height={高さ}
+--width={横幅}
+--icon={アプリのアイコン} ※ アプリを生成するディレクトリに配置
+
+例
+nativefier https://abema.tv/now-on-air/abema-news --name=ABEMA --electron-version=15.1.1 --height=421 --width=650 --icon=abema.icns
+
 // アイコン
 .ico - For Windows
 .icns - For macOS (Apple Icon Image format)
@@ -22,3 +31,17 @@ nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --i
 
 <a href="https://www.iconfinder.com/">iconfinder</a>
 <a href="https://github.com/nativefier/nativefier-icons">nativefier-icons</a>
+
+// icnsファイルを作成する
+iconutilで変換するのでインストールされているか確認
+$ which iconutil
+
+画像のファイル名と仕様
+icon_512x512.png	512 × 512	72dpi
+
+画像ファイルを入れたフォルダに拡張子「.iconset」を追加
+cdで移動して以下のコマンドを実行
+$ iconutil -c icns [filename].iconset
+
+※ iconsetに戻す場合は以下のコマンドを実行
+$ iconutil -c iconset [filename].icns

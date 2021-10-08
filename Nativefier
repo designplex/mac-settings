@@ -16,13 +16,14 @@ nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --i
 <a href="https://github.com/nativefier/nativefier/blob/master/API.md">nativefier API</a>
 
 --name={アプリ名}
---electron-version=15.1.1
+--electron-version=15.1.1 ※ <a href="https://github.com/electron/electron/releases">Electron</a>
 --height={高さ}
 --width={横幅}
 --icon={アプリのアイコン} ※ アプリを生成するディレクトリに配置
 
 例
 nativefier https://abema.tv/now-on-air/abema-news --name=ABEMA --electron-version=15.1.1 --height=421 --width=650 --icon=abema.icns
+nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --width=1024 --height=633 --icon=youtube.icns
 
 // アイコン
 .ico - For Windows

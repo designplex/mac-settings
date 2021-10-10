@@ -83,6 +83,10 @@ https://brew.sh/index_ja
 ターミナルで以下を実行
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+※ Googleアナリティクスを停止
+$ brew analytics off
+＄ brew analytics で確認可。
+
 // Homebrewのパスを通す
 Next stepsのechoの部分を実行してパスを通す。
 以下を実行してバージョンが表示されれば完了。

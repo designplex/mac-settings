@@ -57,6 +57,10 @@ https://github.com/hackjutsu/Lepton
 
 // itsycal メニューバーの日付
 https://www.mowglii.com/itsycal/
+※ AppleLanguagesでは英語表記にならないので以下のファイルを編集。
+/Applications/Itsycal.app/Contents/Info.plist
+の「Localized resources can be mixed」を「no」に。
+
 ※ Day-Oは更新が止まってる感じ
 https://shauninman.com/archive/2020/04/08/day_o_mac_menu_bar_clock_for_catalina
 

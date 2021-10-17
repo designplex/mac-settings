@@ -65,6 +65,12 @@ https://www.mowglii.com/itsycal/
 ※ Day-Oは更新が止まってる感じ
 https://shauninman.com/archive/2020/04/08/day_o_mac_menu_bar_clock_for_catalina
 
+// QuickLook 機能拡張(プラグイン)
+なけれはフォルダを作成 ~/Library/QuickLook
+インストール後は qlmanage -r を実行して再読み込み
+https://github.com/Nyx0uf/qlImageSize
+
+
 ## AppStoreからダウンロード
 // Numbers　Applenの表計算アプリ
 https://apps.apple.com/jp/app/numbers/id409203825?mt=12

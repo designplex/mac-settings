@@ -22,9 +22,10 @@ nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --i
 --icon={アプリのアイコン} ※ アプリを生成するディレクトリに配置
 
 例
-nativefier https://abema.tv/now-on-air/abema-news --name=ABEMA --electron-version=15.1.1 --width=1024 --height=633 --icon=abema.icns
-nativefier https://www.youtube.com/ --name=YouTube --electron-version=15.1.1 --width=1024 --height=633 --icon=youtube.icns
-nativefier https://radiko.jp/#!/top --name=Radiko --electron-version=15.1.1 --width=1024 --height=633 --icon=radiko.icns
+※ cd でインストールするディレクトリに移動
+nativefier https://abema.tv/now-on-air/abema-news --name=ABEMA --electron-version=17.0.0 --width=1024 --height=633 --icon=abema.icns
+nativefier https://www.youtube.com/ --name=YouTube --electron-version=17.0.0 --width=1024 --height=633 --icon=youtube.icns
+nativefier https://radiko.jp/#!/top --name=Radiko --electron-version=17.0.0 --width=1024 --height=633 --icon=radiko.icns
 
 // アイコン
 .ico - For Windows
@@ -47,3 +48,9 @@ $ iconutil -c icns [filename].iconset
 
 ※ iconsetに戻す場合は以下のコマンドを実行
 $ iconutil -c iconset [filename].icns
+
+// electronのアップグレード
+appがあるフォルダを指定
+nativefier --upgrade /Users/[username]/アプリケーション/ABEMA-darwin-arm64
+※  --icon=ファイル名 でアイコンの指定が効かないようだ
+
